@@ -17,6 +17,12 @@ Module.register("MMM-OnScreenMenu", {
             refresh: { title: "Refresh MagicMirror", icon: "refresh", source: "LOCAL" },
             reboot: { title: "Reboot", icon: "spinner", source: "ALL" },
             shutdown: { title: "Shutdown", icon: "power-off", source: "ALL" },
+            // Use this notification for testing recording
+            notifyRecord: {  title: "Record",
+                icon: "eye",
+                name: "MMM-1-Second-A-Day",
+                notification: "RECORD_1_SECOND_VIDEO",
+                payload: "test payload" },
         },
         enableKeyboard: true,
 
